@@ -6,14 +6,32 @@
 @import "base/general";
 @import "../blocks/modules";
 
+/* ПЕРЕМЕННЫЕ */
+/* fonts */
+$roboto: 'Roboto Slab', serif;
+$open-sans: 'Open Sans', sans-serif;
+/* colors */
+$light-color: #fff;
+$accent-color: #65e496;
+
 body{
-    font-family: 'Roboto Slab', serif;
+    font-family: $roboto;
+}
+.wrap{
+    max-width: 1170px;
+    margin: 0 auto; 
 }
 .page-main{
     background: #4b8e93 url(../img/main-bg.jpg) no-repeat;
     background-size: cover;
+    color: $light-color;
+    padding-bottom: 186px;
 }
 .header{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 38px;
+    padding-bottom: 166px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,8 +45,84 @@ body{
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
+        font-family: $open-sans;
         &__item{
-            margin-left: 15px;
+            margin-left: 22px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: .3s;
+            &:hover{
+                border-bottom: 3px solid $accent-color;
+            }
+            &.active{
+                border-bottom: 3px solid $accent-color;
+            }
         }
+        &__link{
+            color: $light-color;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+.block-text{
+    flex-basis: calc(93% - 500px);
+    &__name{
+        font-family: $open-sans;
+        font-size: 18px;
+        font-style: italic;
+        letter-spacing: 0.7px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+        span{
+            display: block;
+            color: $accent-color;
+            font-size: 18px;
+            margin-top: 9px;
+            letter-spacing: 0.9px;
+        }
+    }
+    &__description{
+        font-family: $open-sans;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        letter-spacing: 0.7px;
+    }
+    &__btn{
+        display: block;
+        background-color: $accent-color;
+        color: $light-color;
+        text-decoration: none;
+        max-width: 250px;
+        border-radius: 3px;
+        text-align: center;
+        margin-top: 48px;
+        margin-bottom: 19px;
+        padding: 14px 0;
+        letter-spacing: 0.7px;
+    }
+    &__remark{
+        font-family: $open-sans;
+        font-style: italic;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+    }
+}
+.block-book{
+    display: flex;
+    justify-content: flex-start;
+    &-demo{
+        display: block;
+        width: 448px;
+        height: 642px;
+        background-image: url(../img/svg/book.svg);
+        background-repeat: no-repeat;
+        flex-basis: 500px;
     }
 }

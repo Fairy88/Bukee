@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -396,16 +398,33 @@ ul {
   padding-right: 0.9375rem;
 }
 
+/* ПЕРЕМЕННЫЕ */
+
+/* fonts */
+
+/* colors */
+
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .page-main {
   background: #4b8e93 url(../img/main-bg.jpg) no-repeat;
   background-size: cover;
+  color: #fff;
+  padding-bottom: 186px;
 }
 
 .header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 166px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -422,10 +441,98 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header-list__item {
-  margin-left: 15px;
+  margin-left: 22px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: .3s;
+}
+
+.header-list__item:hover {
+  border-bottom: 3px solid #65e496;
+}
+
+.header-list__item.active {
+  border-bottom: 3px solid #65e496;
+}
+
+.header-list__link {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.block-text {
+  flex-basis: calc(93% - 500px);
+}
+
+.block-text__name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0.7px;
+  margin-bottom: 30px;
+}
+
+.block-text__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 40px;
+}
+
+.block-text__title span {
+  display: block;
+  color: #65e496;
+  font-size: 18px;
+  margin-top: 9px;
+  letter-spacing: 0.9px;
+}
+
+.block-text__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  letter-spacing: 0.7px;
+}
+
+.block-text__btn {
+  display: block;
+  background-color: #65e496;
+  color: #fff;
+  text-decoration: none;
+  max-width: 250px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 19px;
+  padding: 14px 0;
+  letter-spacing: 0.7px;
+}
+
+.block-text__remark {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+
+.block-book {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.block-book-demo {
+  display: block;
+  width: 448px;
+  height: 642px;
+  background-image: url(../img/svg/book.svg);
+  background-repeat: no-repeat;
+  flex-basis: 500px;
 }
 
 @media screen and (min-width: 36rem) {
