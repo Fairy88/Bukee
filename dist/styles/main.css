@@ -477,6 +477,12 @@ body {
   margin-bottom: 30px;
 }
 
+.block-text__name_top {
+  margin-top: 16px;
+  margin-left: 0;
+  color: #696980;
+}
+
 .block-text__title {
   font-size: 48px;
   font-weight: 700;
@@ -497,7 +503,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 24px;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.75px;
 }
 
 .block-text__btn {
@@ -533,6 +539,30 @@ body {
   background-image: url(../img/svg/book.svg);
   background-repeat: no-repeat;
   flex-basis: 500px;
+}
+
+.page {
+  padding-top: 161px;
+}
+
+.block-author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-ava {
+  position: relative;
+}
+
+.block-ava__svg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
+.block-ava__img {
+  margin-top: 47px;
+  margin-right: 44px;
 }
 
 @media screen and (min-width: 36rem) {
