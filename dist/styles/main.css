@@ -624,13 +624,13 @@ h3 {
   letter-spacing: 1.2px;
 }
 
-.block-about p {
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.6px;
-}
-
 .block-about__text {
   flex-basis: 41%;
+}
+
+.block-about__text__desc {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.6px;
 }
 
 .block-about__table {
@@ -667,6 +667,46 @@ h3 {
   background-color: #5fc9b7;
   padding: 0px 7px;
   line-height: 22px;
+}
+
+.block-about__table__btn {
+  background-color: #65e496;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 28px;
+  padding: 14px 45px;
+  letter-spacing: 0.7px;
+  margin-bottom: 19px;
+}
+
+.block-about-social {
+  display: flex;
+  align-items: center;
+}
+
+.block-about-social__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 14px;
+  letter-spacing: 0.9px;
+}
+
+.block-about-social__list {
+  list-style-type: none;
+  padding-left: 24px;
+}
+
+.block-about-social__list > li {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+  margin-right: 12px;
+  color: #65e496;
 }
 
 @media screen and (min-width: 36rem) {
