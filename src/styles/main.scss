@@ -17,6 +17,7 @@ $title: #44444f;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
 $text: #696980;
+$btn-color: linear-gradient(to top left, #65e49b, #65e4b0);
 
 body{
     font-family: $roboto;
@@ -110,7 +111,7 @@ h3{
     }
     &__btn{
         display: block;
-        background-color: $accent-color;
+        background: $btn-color;
         color: $light-color;
         text-decoration: none;
         max-width: 250px;
@@ -120,6 +121,7 @@ h3{
         margin-bottom: 19px;
         padding: 14px 0;
         letter-spacing: 0.7px;
+        box-shadow: 0 -2px #b2f1be inset;
     }
     &__remark{
         font-family: $open-sans;
@@ -272,7 +274,7 @@ h3{
             }
         }
         &__btn{
-            background-color: $accent-color;
+            background: $btn-color;
             border: none;
             color: #fff;
             text-decoration: none;
@@ -283,6 +285,8 @@ h3{
             padding: 14px 45px;
             letter-spacing: 0.7px;
             margin-bottom: 19px;
+            outline: none;
+            box-shadow: 0 -2px #b2f1be inset;
         }
     }
     &-social{
@@ -396,11 +400,25 @@ h3{
         text-align: center;
         border: none;
         border-radius: 3px;
-        background-color: $accent-color;
+        background: $btn-color;
         color: #fff;
         font-size: 18px;
         padding: 14px 33px;
         letter-spacing: 0.75px;
         margin-bottom: 100px;
+        outline: none;
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            height: 20px;
+            width: 100%;
+            background-color: #b2f1be;
+            position: absolute;
+            z-index: -1;
+            bottom: -2px;
+            left: 0;
+            border-radius: 3px;
+        }
     }
 }

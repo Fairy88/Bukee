@@ -48,7 +48,7 @@
                     <div class="wrap">
                         <div class="block-book">
                             <div class="block-book-demo">
-                                <h2 class="block-book-demo__title">Good book
+                                    <h2 class="block-book-demo__title">Good book
                                     <span>Don’t judge a book by its cover</span>
                                 </h2>
                                 <p class="block-book-demo__author">- By Emma Anderson</p>
@@ -170,3 +170,17 @@
         <script src="../js/vendor.js"></script>
     </body>
 </html>
+$btn-color: linear-gradient(to top left, #65e49b, #65e4b0);
+position: relative;
+&::before{
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-color: #b2f1be;
+    position: absolute;
+    z-index: -1;
+    bottom: -2px;
+    left: 0;
+    border-radius: 3px;
+}
