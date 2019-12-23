@@ -475,12 +475,13 @@ h3{
     &-item{
         margin-top: 60px;
         h4{
-            margin-top: 15px;
+            margin-top: 18px;
             font-size: 18px;
             letter-spacing: 0.85px;
         }
     }
     &-info{
+        margin-top: -9px;
         font-size: 15px;
         font-family: $open-sans;
         a{
@@ -499,7 +500,7 @@ h3{
         font-size: 15px;
         font-family: $open-sans;
         letter-spacing: 0.75px;
-        text-align: center;
+        text-align: left;
     }
     &-img{
         width: 369px;

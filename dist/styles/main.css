@@ -957,12 +957,13 @@ h3 {
 }
 
 .block-blog-item h4 {
-  margin-top: 15px;
+  margin-top: 18px;
   font-size: 18px;
   letter-spacing: 0.85px;
 }
 
 .block-blog-info {
+  margin-top: -9px;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
 }
@@ -985,7 +986,7 @@ h3 {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.75px;
-  text-align: center;
+  text-align: left;
 }
 
 .block-blog-img {
