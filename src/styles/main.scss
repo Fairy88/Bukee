@@ -462,18 +462,58 @@ h3{
         padding: 14px 33px;
         letter-spacing: 0.75px;
         outline: none;
+        box-shadow: 0 -2px #b2f1be inset;
+    }
+}
+.block-blog{
+    display: flex;
+    justify-content: space-between;
+    &+.other-books__btn{
+        margin: 68px auto 0;
+        padding: 15px 33px;
+    }
+    &-item{
+        margin-top: 60px;
+        h4{
+            margin-top: 15px;
+            font-size: 18px;
+            letter-spacing: 0.85px;
+        }
+    }
+    &-info{
+        font-size: 15px;
+        font-family: $open-sans;
+        a{
+            color: $accent-color;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        p span{
+            margin-left: 5px;
+        }
+        p span~span{
+            margin-left: 0;
+        }
+    }
+    &__desc{
+        font-size: 15px;
+        font-family: $open-sans;
+        letter-spacing: 0.75px;
+        text-align: center;
+    }
+    &-img{
+        width: 369px;
+        height: 224px;
+        overflow: hidden;
         position: relative;
-        &::before{
-            content: "";
-            display: block;
-            height: 20px;
-            width: 100%;
-            background-color: #b2f1be;
+        img{
+            width: 369px;
+            height: 224px;
             position: absolute;
-            z-index: -1;
-            bottom: -2px;
-            left: 0;
-            border-radius: 3px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
         }
     }
 }
