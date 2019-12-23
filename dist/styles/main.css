@@ -1006,6 +1006,134 @@ h3 {
   object-fit: cover;
 }
 
+.block-letter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-letter-item {
+  flex-basis: 49%;
+}
+
+.block-letter__title {
+  font-size: 48px;
+  margin-bottom: 23px;
+  letter-spacing: 1.9px;
+  margin-top: 8px;
+}
+
+.block-letter__btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px #b2f1be inset;
+  outline: none;
+  border: none;
+  padding: 11px 0 18px 0;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.block-letter__input {
+  width: 100%;
+  background: #44444f;
+  color: #8787a7;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 27px;
+  box-sizing: border-box;
+  letter-spacing: 0.75px;
+}
+
+.block-letter__input:focus {
+  outline: none;
+  letter-spacing: 0.75px;
+  color: #8787a7;
+}
+
+.block-letter__text {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.75;
+  text-align: justify;
+}
+
+.footer {
+  background-color: #44444f;
+  color: #8787a7;
+}
+
+.block-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 160px 0 115px 0;
+}
+
+.block-footer-item {
+  flex-basis: 30%;
+}
+
+.block-footer-item__text {
+  letter-spacing: 0.6px;
+  margin-top: 25px;
+}
+
+.block-footer-item_position {
+  margin-right: -90px;
+}
+
+.block-footer__logo {
+  display: block;
+  width: 137px;
+  height: 28px;
+  background-image: url(../img/svg/Logo-mini.svg);
+  background-repeat: no-repeat;
+}
+
+.block-footer__title {
+  font-size: 18px;
+  color: #65e496;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.block-footer__list {
+  list-style-type: none;
+  letter-spacing: 0.75px;
+}
+
+.block-footer__list > li {
+  margin-top: 3px;
+}
+
+.block-footer__list > li > a {
+  text-decoration: none;
+  color: #8787a7;
+}
+
+.block-footer__social {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.block-footer__social > li {
+  margin-right: 12px;
+  padding-left: 0;
+}
+
+.block-footer__social > li > a {
+  color: #65e496;
+}
+
 @media screen and (min-width: 36rem) {
   .container {
     max-width: 31.875rem;
