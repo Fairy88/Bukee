@@ -1152,6 +1152,99 @@ h3 {
   color: #65e496;
 }
 
+.block-slider {
+  text-align: center;
+}
+
+.block-slider h3 {
+  color: #65e496;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.block-slider__desc {
+  font-family: "Open Sans", sans-serif;
+  color: #8787a7;
+  max-width: 760px;
+  letter-spacing: 0.75px;
+  margin: 0 auto;
+  line-height: 27px;
+}
+
+.block-slider-thumb {
+  display: block;
+  margin: 0 auto 0px;
+  position: relative;
+  overflow: hidden;
+  width: 152px;
+  height: 152px;
+  border-radius: 100%;
+}
+
+.block-slider-thumb img {
+  width: 152px;
+  height: 152px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.block-slider__expert {
+  margin-bottom: 32px;
+}
+
+.block-slider-ava {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: block;
+  margin: 0 auto 27px;
+}
+
+.block-slider-quote {
+  position: absolute;
+  display: block;
+  background-image: url(../img/quote.png);
+  background-repeat: no-repeat;
+  height: 42px;
+  width: 48px;
+  top: 0;
+  right: -15px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.slick-dots > li {
+  margin: 0 5px;
+}
+
+.slick-dots > li > button {
+  text-indent: -9999px;
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: #65e496;
+  border-radius: 100%;
+  line-height: 0;
+  font-size: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slick-dots > li.slick-active > button {
+  width: 37px;
+  height: 8px;
+  border-radius: 4px;
+}
+
 @media screen and (min-width: 36rem) {
   .container {
     max-width: 31.875rem;
