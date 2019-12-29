@@ -413,6 +413,7 @@ body {
 .wrap {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 h3 {
@@ -429,8 +430,7 @@ h3 {
 .header {
   max-width: 1170px;
   margin: 0 auto;
-  padding-top: 38px;
-  padding-bottom: 166px;
+  padding: 38px 15px 166px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -441,6 +441,7 @@ h3 {
   width: 137px;
   height: 28px;
   background-image: url(../img/svg/Logo.svg);
+  background-repeat: no-repeat;
 }
 
 .header-list {
@@ -478,9 +479,8 @@ h3 {
 .block-text__name {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  font-style: italic;
-  letter-spacing: 0.7px;
-  margin-bottom: 43px;
+  letter-spacing: 0.9px;
+  margin-bottom: 28px;
   margin-top: 0;
 }
 
@@ -502,22 +502,25 @@ h3 {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 1.8px;
-  margin-bottom: 40px;
+  margin-top: 26px;
+  line-height: 53px;
+  margin-bottom: 38px;
 }
 
 .block-text__title span {
   display: block;
   color: #65e496;
   font-size: 18px;
-  margin-top: 23px;
+  margin-top: 11px;
   letter-spacing: 0.9px;
+  line-height: 23px;
 }
 
 .block-text__description {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 24px;
+  margin-top: 26px;
   letter-spacing: 0.75px;
 }
 
@@ -640,8 +643,12 @@ h3 {
 }
 
 .page {
-  padding-top: 161px;
+  padding-top: 160px;
   padding-bottom: 160px;
+}
+
+.page-slider {
+  position: relative;
 }
 
 .page_gray {
@@ -663,10 +670,24 @@ h3 {
   letter-spacing: 0.9px;
 }
 
+.page__svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  min-height: 694px;
+  margin-bottom: 50px;
+}
+
+.path {
+  width: 100%;
+}
+
 .block-author {
   display: flex;
   justify-content: space-between;
   color: #696980;
+  padding-top: 215px;
 }
 
 .block-author h2 {
@@ -735,7 +756,7 @@ h3 {
 }
 
 .block-about__text {
-  flex-basis: 41%;
+  flex-basis: calc(100% - 690px);
 }
 
 .block-about__text__desc {
@@ -745,7 +766,7 @@ h3 {
 }
 
 .block-about__table {
-  flex-basis: 49%;
+  flex-basis: 570px;
 }
 
 .block-about__table__list {
@@ -753,6 +774,7 @@ h3 {
   padding: 0;
   counter-reset: list;
   column-count: 2;
+  column-gap: 19px;
   color: #696980;
 }
 
@@ -774,7 +796,7 @@ h3 {
   font-family: "Open Sans", sans-serif;
   position: absolute;
   left: 0;
-  top: 1px;
+  top: calc(50% - 11px);
   color: #fff;
   background-color: #5fc9b7;
   padding: 0px 7px;
@@ -943,7 +965,7 @@ h3 {
 .other-books__btn {
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin: 50px auto 25px;
   text-align: center;
   border: none;
   border-radius: 3px;
@@ -969,6 +991,7 @@ h3 {
 
 .block-blog-item {
   margin-top: 60px;
+  flex-basis: 32%;
 }
 
 .block-blog-item h4 {
@@ -982,6 +1005,7 @@ h3 {
   margin-top: -9px;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
+  flex-wrap: wrap;
 }
 
 .block-blog-info a {
@@ -1006,14 +1030,14 @@ h3 {
 }
 
 .block-blog-img {
-  width: 369px;
+  width: 100%;
   height: 224px;
   overflow: hidden;
   position: relative;
 }
 
 .block-blog-img img {
-  width: 369px;
+  width: 100%;
   height: 224px;
   position: absolute;
   left: 50%;
@@ -1152,8 +1176,13 @@ h3 {
   color: #65e496;
 }
 
+.slick-slide {
+  outline: none;
+}
+
 .block-slider {
   text-align: center;
+  padding-top: 115px;
 }
 
 .block-slider h3 {
@@ -1266,6 +1295,85 @@ h3 {
 @media screen and (min-width: 75rem) {
   .container {
     max-width: 69.375rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .block-author {
+    padding-top: 0;
+  }
+
+  .block-slider {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .block-text {
+    flex-basis: calc(93% - 315px);
+  }
+
+  .block-text_width {
+    flex-basis: calc(93% - 315px);
+  }
+
+  .page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .page-slider {
+    background-color: #44444f;
+  }
+
+  .page__svg {
+    display: none;
+  }
+
+  .block-ava__svg {
+    width: 300px;
+    height: 412px;
+  }
+
+  .block-ava__img {
+    width: 300px;
+  }
+
+  .block-about {
+    flex-direction: column;
+    margin: 82px auto 0;
+    max-width: 750px;
+  }
+
+  .block-about__text {
+    flex-basis: 100%;
+  }
+
+  .block-about__table {
+    flex-basis: 100%;
+    margin-top: 40px;
+  }
+
+  .block-blog {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 920px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .block-counter {
+    flex-direction: column;
+  }
+
+  .block-counter p {
+    margin-bottom: 80px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
