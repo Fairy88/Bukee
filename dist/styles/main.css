@@ -661,7 +661,6 @@ h3 {
   margin-bottom: 25px;
   letter-spacing: 2px;
   color: #44444f;
-  line-height: 50px;
 }
 
 .page__subtitle {
@@ -871,7 +870,6 @@ h3 {
   margin-top: 160px;
   letter-spacing: 1.5px;
   color: #44444f;
-  line-height: 50px;
 }
 
 .other-books__title span {
@@ -1076,7 +1074,6 @@ h3 {
   letter-spacing: 1.9px;
   margin-top: 8px;
   color: #44444f;
-  line-height: 50px;
 }
 
 .block-letter__btn {
@@ -1398,7 +1395,7 @@ h3 {
   .other-books .block-books-second,
   .other-books .block-books-third {
     max-width: 550px;
-    margin: 28px auto;
+    margin: 40px auto;
   }
 
   .block-blog {
@@ -1440,6 +1437,26 @@ h3 {
   }
 }
 
+@media (max-width: 850px) {
+  .block-text__btn {
+    margin: 40px auto 50px;
+  }
+
+  .block-text-item__btn {
+    margin: 40px auto 0;
+  }
+
+  .block-author {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .block-ava {
+    max-width: 356px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 750px) {
   .block-counter {
     flex-direction: column;
@@ -1451,8 +1468,77 @@ h3 {
 }
 
 @media (max-width: 630px) {
+  .page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .block-author {
+    padding-top: 80px;
+  }
+
   .block-about__table__list {
     column-count: 1;
+  }
+
+  .other-books__title {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-text__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .page__title {
+    font-size: 30px;
+  }
+
+  .page__subtitle {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .block-counter p {
+    margin-bottom: 45px;
+  }
+
+  .block-counter p span {
+    font-size: 60px;
+    margin-bottom: 29px;
+  }
+
+  .other-books__title {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  .block-letter__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 405px) {
+  .block-ava__svg {
+    width: 200px;
+    height: 300px;
+  }
+
+  .block-ava__img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .block-author {
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

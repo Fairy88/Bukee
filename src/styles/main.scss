@@ -116,6 +116,10 @@ h3{
         margin-top: 26px;
         line-height: 53px;
         margin-bottom: 38px;
+        @media(max-width: 480px){
+            font-size: 30px;
+            line-height: 30px;
+        }
         span{
             display: block;
             color: $accent-color;
@@ -151,6 +155,9 @@ h3{
                 margin: 40px auto 0;
             }
         }
+        @media(max-width: 850px){
+            margin: 40px auto 50px;
+        }   
     }
     &__remark{
         font-family: $open-sans;
@@ -190,6 +197,9 @@ h3{
             padding: 11px 0 15px 0;
             letter-spacing: 0.7px;
             box-shadow: 0 -2px #b2f1be inset;
+            @media(max-width: 850px){
+                margin: 40px auto 0;
+            }   
         }
     }
     &_width{
@@ -257,6 +267,14 @@ h3{
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    @media(max-width:630px){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media(max-width:400px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     &-slider{
         position: relative;
         @media(max-width:1020px){
@@ -272,13 +290,19 @@ h3{
         margin-bottom: 25px;
         letter-spacing: 2px;
         color: $bg-dark-color;
-        line-height: 50px;
+        @media(max-width: 480px){
+            font-size: 30px;
+        }
     }
     &__subtitle{
         font-size: 18px;
         color: $accent-color;
         text-align: center;
         letter-spacing: 0.9px;
+        @media(max-width: 480px){
+            margin-bottom: 0;
+            font-size: 16px;
+        }
     }
     &__svg{
         position: absolute;
@@ -299,8 +323,18 @@ h3{
     display: flex;
     justify-content: space-between;
     color: $text;
+    @media (max-width:850px){
+        flex-direction: column;
+        text-align: center;
+    }
     @media (min-width:1600px){
         padding-top: 100px;
+    }
+    @media(max-width:630px){
+        padding-top: 80px;
+    }
+    @media(max-width:400px){
+            padding-top: 30px;
     }
     h2{
         color: $bg-dark-color;
@@ -308,6 +342,10 @@ h3{
 }
 .block-ava{
     position: relative;
+    @media (max-width:850px){
+        max-width: 356px;
+        margin: 0 auto;
+    }
     &__svg{
         position: absolute;
         z-index: -1;
@@ -316,6 +354,10 @@ h3{
         width: 300px;
         height: 412px;
         }
+        @media(max-width:405px){
+            width: 200px;
+            height: 300px;
+            }
         &_left{
             right: inherit;
             left: 0;
@@ -327,6 +369,9 @@ h3{
         @media(max-width:1020px){
         width: 300px;
         }
+        @media(max-width:405px){
+            width: 200px;
+            }
         &_left{
             margin-left: 51px;
             margin-right: 0;  
@@ -349,6 +394,9 @@ h3{
         @media(max-width:750px){
             margin-bottom: 80px;
         }
+        @media(max-width: 480px){
+            margin-bottom: 45px;
+        }
         span {
             display: block;
             font-family: $roboto;
@@ -357,6 +405,10 @@ h3{
             text-align: center;
             color: $accent-color;
             margin-bottom: 45px;
+            @media(max-width: 480px){
+                font-size: 60px;
+                margin-bottom: 29px;
+            }
         }
     }
  }
@@ -485,7 +537,13 @@ h3{
         margin-top: 160px;
         letter-spacing: 1.5px;
         color: $bg-dark-color;
-        line-height: 50px;
+        @media(max-width:630px){
+            margin-top: 80px;
+        }
+        @media(max-width: 480px){
+            font-size: 30px;
+            margin-top: 60px;
+        }
         span{
             display: block;
             margin-top: 22px;
@@ -507,7 +565,7 @@ h3{
             text-align: center;
             @media(max-width:1020px){
                 max-width: 550px;
-                margin: 28px auto;
+                margin: 40px auto;
             }
             &__title{
                 margin-top: 35px;
@@ -665,7 +723,9 @@ h3{
         letter-spacing: 1.9px;
         margin-top: 8px;
         color: $bg-dark-color;
-        line-height: 50px;
+        @media(max-width: 480px){
+            font-size: 30px;
+        }
     }
     &__btn{
         display: block;
