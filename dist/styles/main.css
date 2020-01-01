@@ -424,7 +424,7 @@ h3 {
   background: #4b8e93 url(../img/main-bg.jpg) no-repeat;
   background-size: cover;
   color: #fff;
-  padding-bottom: 186px;
+  padding: 40px 0 165px;
 }
 
 .header {
@@ -442,6 +442,10 @@ h3 {
   height: 28px;
   background-image: url(../img/svg/Logo.svg);
   background-repeat: no-repeat;
+}
+
+.header-nav {
+  position: relative;
 }
 
 .header-list {
@@ -472,6 +476,41 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+.header-menu {
+  border: none;
+  display: none;
+  background: transparent;
+  transition: .3s;
+}
+
+.header-menu:focus {
+  outline: none;
+}
+
+.header-menu svg {
+  width: 50px;
+  height: 50px;
+}
+
+.header-menu__close {
+  border: none;
+  display: none;
+  background: transparent;
+  transition: 0.3s;
+  position: absolute;
+  top: 5px;
+  right: -70px;
+}
+
+.header-menu__close:focus {
+  outline: none;
+}
+
+.header-menu__close svg {
+  width: 15px;
+  height: 15px;
+}
+
 .block-text {
   flex-basis: calc(93% - 500px);
 }
@@ -488,13 +527,12 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   letter-spacing: 0.7px;
-  margin-bottom: 37px;
+  margin-bottom: 19px;
   margin-top: 0;
 }
 
 .block-text__name_top {
-  margin-top: 16px;
-  margin-left: 0;
+  margin: 12px 0 20px;
   color: #696980;
 }
 
@@ -502,7 +540,7 @@ h3 {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 1.8px;
-  margin-top: 26px;
+  margin-top: 18px;
   line-height: 53px;
   margin-bottom: 38px;
 }
@@ -535,7 +573,8 @@ h3 {
   margin-top: 48px;
   margin-bottom: 19px;
   padding: 11px 0 15px 0;
-  letter-spacing: 0.7px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
   box-shadow: 0 -2px #b2f1be inset;
 }
 
@@ -605,6 +644,7 @@ h3 {
   height: 643px;
   background-image: url(../img/svg/book.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   flex-basis: 500px;
 }
 
@@ -643,8 +683,8 @@ h3 {
 }
 
 .page {
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 58px;
+  padding-bottom: 140px;
 }
 
 .page-slider {
@@ -656,6 +696,7 @@ h3 {
 }
 
 .page__title {
+  margin-top: 100px;
   font-size: 48px;
   text-align: center;
   margin-bottom: 25px;
@@ -721,7 +762,7 @@ h3 {
 .block-counter {
   display: flex;
   justify-content: space-around;
-  margin-top: 152px;
+  margin-top: 172px;
 }
 
 .block-counter p {
@@ -1062,6 +1103,7 @@ h3 {
 .block-letter {
   display: flex;
   justify-content: space-between;
+  padding: 100px 0 30px;
 }
 
 .block-letter-item {
@@ -1126,7 +1168,7 @@ h3 {
 .block-footer {
   display: flex;
   justify-content: space-between;
-  padding: 160px 0 115px 0;
+  padding: 160px 0 115px;
 }
 
 .block-footer-item {
@@ -1136,10 +1178,6 @@ h3 {
 .block-footer-item__text {
   letter-spacing: 0.6px;
   margin-top: 25px;
-}
-
-.block-footer-item_position {
-  margin-right: -90px;
 }
 
 .block-footer__logo {
@@ -1196,6 +1234,7 @@ h3 {
 .block-slider {
   text-align: center;
   padding-top: 115px;
+  padding-bottom: 160px;
 }
 
 .block-slider h3 {
@@ -1221,6 +1260,7 @@ h3 {
   width: 152px;
   height: 152px;
   border-radius: 100%;
+  margin-top: 70px;
 }
 
 .block-slider-thumb img {
@@ -1313,7 +1353,7 @@ h3 {
 
 @media (min-width: 1600px) {
   .block-author {
-    padding-top: 100px;
+    padding-top: 63px;
   }
 }
 
@@ -1324,6 +1364,10 @@ h3 {
 }
 
 @media (max-width: 1020px) {
+  .page-main {
+    padding-bottom: 120px;
+  }
+
   .header {
     padding: 38px 15px 95px 15px;
   }
@@ -1346,7 +1390,7 @@ h3 {
   }
 
   .block-book-demo {
-    margin: 25px auto 0;
+    margin: 35px auto 0;
     flex-basis: 638px;
   }
 
@@ -1425,6 +1469,10 @@ h3 {
   .block-letter__text {
     margin-bottom: 40px;
   }
+
+  .block-slider {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -1439,7 +1487,7 @@ h3 {
 
 @media (max-width: 850px) {
   .block-text__btn {
-    margin: 40px auto 50px;
+    margin: 40px auto 10px;
   }
 
   .block-text-item__btn {
@@ -1453,11 +1501,41 @@ h3 {
 
   .block-ava {
     max-width: 356px;
-    margin: 0 auto;
+    margin: 50px auto;
+  }
+
+  .block-letter {
+    padding: 0 40px;
+  }
+
+  .block-footer__social > li {
+    font-size: 20px;
+    padding-right: 9px;
   }
 }
 
 @media (max-width: 750px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header-list {
+    flex-direction: column;
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  .header-menu__close {
+    display: block;
+  }
+
+  .page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .block-counter {
     flex-direction: column;
   }
@@ -1465,40 +1543,83 @@ h3 {
   .block-counter p {
     margin-bottom: 80px;
   }
+
+  .other-books__title {
+    margin-top: 80px;
+  }
+
+  .block-footer {
+    flex-direction: column;
+    padding: 80px 0;
+  }
+
+  .block-footer-item {
+    margin: 25px auto;
+    text-align: center;
+    max-width: 600px;
+    flex-basis: 100%;
+  }
+
+  .block-footer__logo {
+    margin: 0 auto 15px;
+    font-size: 30px;
+  }
+
+  .block-footer__social > li {
+    margin: 15px auto;
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 630px) {
-  .page {
-    padding-top: 80px;
+  .page-main {
     padding-bottom: 80px;
-  }
-
-  .block-author {
-    padding-top: 80px;
   }
 
   .block-about__table__list {
     column-count: 1;
   }
-
-  .other-books__title {
-    margin-top: 80px;
-  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .block-text__title {
     font-size: 30px;
     line-height: 30px;
   }
 
+  .block-book-demo {
+    margin: 35px auto 0;
+    max-width: 280px;
+    max-height: 400px;
+  }
+
+  .block-book-demo__title {
+    top: 50px;
+    left: 42px;
+    line-height: 1;
+  }
+
+  .block-book-demo__title span {
+    line-height: 1.5;
+  }
+
+  .block-book-demo__author {
+    left: 50px;
+    bottom: 10px;
+  }
+
   .page__title {
     font-size: 30px;
+    margin-top: 30px;
   }
 
   .page__subtitle {
     margin-bottom: 0;
     font-size: 16px;
+  }
+
+  .block-counter {
+    margin-top: 52px;
   }
 
   .block-counter p {
@@ -1517,21 +1638,15 @@ h3 {
 
   .block-letter__title {
     font-size: 30px;
+    line-height: 1;
   }
 }
 
 @media (max-width: 405px) {
-  .block-ava__svg {
-    width: 200px;
-    height: 300px;
+  .page-main {
+    padding-bottom: 50px;
   }
 
-  .block-ava__img {
-    width: 200px;
-  }
-}
-
-@media (max-width: 400px) {
   .page {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1539,6 +1654,15 @@ h3 {
 
   .block-author {
     padding-top: 30px;
+  }
+
+  .block-ava__svg {
+    width: 200px;
+    height: 300px;
+  }
+
+  .block-ava__img {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
